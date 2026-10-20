@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>YOPZ ULTRA FINAL APK</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{background:#06020F;color:#fff;font-family:'Geist',-apple-system,sans-serif}
+.app{max-width:430px;margin:0 auto;min-height:100vh;background:radial-gradient(130% 68% at 50% -10%, #A78BFA 0%, #7C3AED 32%, #4C1D95 60%, #06020F 100%);position:relative;padding-bottom:88px;overflow:hidden}
+.top{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(6,2,15,.72);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:.7px solid rgba(167,139,250,.18);position:sticky;top:0;z-index:30;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.panel{border-radius:24px;padding:16px;background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.88));border:.7px solid rgba(255,255,255,.8);box-shadow:0 1px 0 #fff inset, 0 12px 24px rgba(0,0,0,.14), 0 28px 52px rgba(0,0,0,.18);color:#0A0A0B}
+.input{width:100%;height:46px;background:rgba(0,0,0,.04);border:.7px solid rgba(0,0,0,.07);border-radius:999px;padding:0 16px;font-size:13px;outline:none;font-family:'Geist';color:#0A0A0B}
+.btn-p{width:100%;height:46px;border-radius:999px;border:none;font-weight:700;font-size:12.5px;display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(180deg, #8B5CF6, #7C3AED);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.28) inset, 0 10px 20px rgba(124,58,237,.32);cursor:pointer}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.wrap{padding:12px}.label{font-family:'Geist Mono';font-size:9px;letter-spacing:.18em;color:rgba(255,255,255,.42);margin:0 0 8px 6px;text-transform:uppercase}
+.tab{display:none}.tab.active{display:block}.preview{margin-top:10px;background:rgba(0,0,0,.04);border:.7px solid rgba(0,0,0,.06);border-radius:18px;min-height:86px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card-mini{height:86px;border-radius:20px;padding:12px 14px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:.28s cubic-bezier(.34,1.56,.64,1);border:.7px solid rgba(255,255,255,.8);box-shadow:0 1px 0 #fff inset, 0 8px 16px rgba(0,0,0,.12), 0 22px 36px rgba(0,0,0,.18), 0 0 0 1px rgba(255,255,255,.18) inset, 0 12px 24px rgba(124,58,237,.14)}
+.card-mini.white{background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.86));color:#0A0A0B}.card-mini.white s{color:#8E8E93}
+.card-mini.down-purple{background:linear-gradient(180deg, #8B5CF6 0%, #7C3AED 55%, #5B21B6 100%);border:.8px solid rgba(167,139,250,.42);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.22) inset, 0 8px 16px rgba(0,0,0,.18), 0 22px 36px rgba(76,29,149,.32), 0 12px 24px rgba(124,58,237,.28)}
+.card-mini.down-purple b{color:#fff}.card-mini.down-purple s{color:rgba(255,255,255,.72)}
+.card-mini b{font-size:12px;display:block}.card-mini s{font-size:9px;font-family:Geist Mono;text-decoration:none;margin-top:2px;display:block;opacity:.8}
+.ico{width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.7), 0 6px 12px rgba(0,0,0,.18), 0 12px 20px rgba(0,0,0,.12);position:relative}
+.ico::after{content:'';position:absolute;inset:0;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,.32), transparent 55%)}
+.nav{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);width:calc(100% - 18px);max-width:400px;height:62px;background:rgba(16,7,36,.88);backdrop-filter:blur(32px);border:.7px solid rgba(139,92,246,.22);border-radius:22px;display:flex;justify-content:space-around;align-items:center;z-index:40;box-shadow:0 16px 32px rgba(0,0,0,.44), inset 0 1px 0 rgba(255,255,255,.08)}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 10px;border-radius:14px;transition:.32s cubic-bezier(.34,1.56,.64,1);color:rgba(255,255,255,.48);cursor:pointer;min-width:52px}.nav-item svg{width:20px;height:20px;stroke-width:1.7}.nav-item span{font-size:8.5px;font-weight:600}
+.nav-item.active{background:#fff;color:#0A0A0B;box-shadow:0 6px 14px rgba(255,255,255,.18), inset 0 1px 0 #fff}.nav-item.active svg{stroke:#0A0A0B}
+@keyframes bal{0%{transform:scale(1)}20%{transform:scale(0.84,1.12)}45%{transform:scale(1.18,0.84)}75%{transform:scale(0.96,1.06)}100%{transform:scale(1)}}.bal{animation:bal .58s cubic-bezier(.34,1.56,.64,1)}
+.tv-tab{display:flex;gap:6px;overflow-x:auto;margin-bottom:10px;padding-bottom:2px}.tv-tab button{height:32px;padding:0 14px;border-radius:999px;border:.7px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:rgba(255,255,255,.6);font-size:10px;font-weight:700;white-space:nowrap;cursor:pointer;transition:.2s}.tv-tab button.active{background:#fff;color:#0A0A0B;border-color:#fff;box-shadow:0 6px 14px rgba(255,255,255,.18)}
+.news-cat{display:flex;gap:6px;overflow-x:auto;margin:10px 0}.news-cat button{height:28px;padding:0 12px;border-radius:999px;border:.7px solid rgba(124,58,237,.22);background:rgba(124,58,237,.12);color:#DDD6FE;font-size:9px;font-family:Geist Mono;font-weight:600;white-space:nowrap;cursor:pointer}.news-cat button.active{background:#7C3AED;color:#fff;border-color:#7C3AED}
+.news-card{border-radius:16px;padding:12px;background:#fff;border:.6px solid rgba(0,0,0,.06);margin-bottom:8px;color:#0A0A0B;display:flex;gap:10px;box-shadow:0 8px 18px rgba(0,0,0,.08);cursor:pointer;transition:.2s}.news-card:active{transform:scale(.97)}
+@keyframes pulse{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="top"><b style="font-size:13px">YOPZ • ULTRA PURPLE</b><div style="height:24px;padding:0 10px;background:rgba(139,92,246,.2);border:.7px solid rgba(167,139,250,.3);border-radius:999px;font-family:Geist Mono;font-size:9px;display:flex;align-items:center;gap:6px;color:#DDD6FE"><span style="width:6px;height:6px;background:#22C55E;border-radius:50%;box-shadow:0 0 8px #22C55E;display:inline-block"></span>ONLINE</div></div>
+
+<div class="tab active" id="tab-home"><div class="wrap"><div class="label">App Store • Final Purple 2026 • Mini Pro</div><div class="grid">
+<div class="card-mini white" onclick="bal(this);go('finansial')"><div class="ico" style="background:linear-gradient(180deg, #A78BFA, #7C3AED)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15"/><path d="M3 7v9a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-3"/><circle cx="16" cy="12" r="1"/></svg></div><div><b>Finansial</b><s>Tabungan • Expense</s></div></div>
+<div class="card-mini down-purple" onclick="bal(this);go('down')"><div class="ico" style="background:linear-gradient(180deg, #F0ABFC, #C026D3)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><div><b>Downloader</b><s>TT • IG • FB • HD</s></div></div>
+<div class="card-mini white" onclick="bal(this);go('berita')"><div class="ico" style="background:linear-gradient(180deg, #60A5FA, #2563EB)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M16 7l-4-3-4 3"/></svg></div><div><b>Berita TV</b><s>Live • Nonton di APK</s></div></div>
+<div class="card-mini white" onclick="bal(this);go('koreksi')"><div class="ico" style="background:linear-gradient(180deg, #34D399, #059669)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div><b>Koreksi</b><s>WA Auto</s></div></div>
+</div></div></div>
+
+<div class="tab" id="tab-down"><div class="wrap"><div class="label">Downloader • Background Ungu • Icon Resmi</div><div class="grid" style="margin-bottom:10px">
+<div class="card-mini down-purple" onclick="bal(this);pick('tt')"><div class="ico" style="background:#000"><svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.8.12V8.75a6.33 6.33 0 0 0-.8-.05A6.33 6.33 0 0 0 3.16 15a6.33 6.33 0 0 0 6.33 6.33A6.33 6.33 0 0 0 15.82 15V9.5a7.64 7.64 0 0 0 4.35 1.38V7.43a4.84 4.84 0 0 1-.58-.74z"/></svg></div><div><b>TikTok</b><s>HD No WM</s></div></div>
+<div class="card-mini down-purple" onclick="bal(this);pick('ig')"><div class="ico" style="background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg></div><div><b>Instagram</b><s>Reels HD</s></div></div>
+<div class="card-mini down-purple" onclick="bal(this);pick('fb')"><div class="ico" style="background:#1877F2"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.12 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></div><div><b>Facebook</b><s>Video HD</s></div></div>
+<div class="card-mini down-purple" onclick="bal(this);pick('yt')"><div class="ico" style="background:#FF0000"><svg width="18" height="12" viewBox="0 0 28 20"><path d="M27.97 3.12C27.64 1.89 26.67.92 25.44.59 23.22 0 14.28 0 14.28 0S5.35 0 3.12.59C1.89.92.92 1.89.59 3.12 0 5.35 0 10 0 10s0 4.65.59 6.88c.33 1.23 1.3 2.2 2.53 2.53C5.35 20 14.28 20 14.28 20s8.94 0 11.16-.59c1.23-.33 2.2-1.3 2.53-2.53.59-2.23.59-6.88.59-6.88s0-4.65-.59-6.88Z" fill="white"/><path d="M19.2 10 9.66 4.5v11L19.2 10Z" fill="#FF0000"/></svg></div><div><b>YT • GB</b><s>MP4 MP3</s></div></div>
+</div><div class="panel"><div style="display:flex;gap:8px"><input class="input" id="dUrl" placeholder="Tempel Link TikTok/IG/FB/YT"><button class="btn-p" style="width:70px" onclick="bal(this);goDown()">Go</button></div><div class="preview" id="pv"><span style="font-family:Geist Mono;font-size:10px;color:#8E8E93">Preview Nonton di APK</span></div><div id="dlAct" style="display:none;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px"><div style="border-radius:14px;padding:11px;background:#0A0A0B;color:#fff;text-align:center;cursor:pointer" onclick="dlVideo()"><b style="font-size:11px">Video HD</b><div style="font-size:9px;font-family:Geist Mono;opacity:.6">No Watermark</div></div><div style="border-radius:14px;padding:11px;background:#fff;border:.6px solid rgba(0,0,0,.06);text-align:center;cursor:pointer" onclick="dlAudio()"><b style="font-size:11px">Audio MP3</b><div style="font-size:9px;font-family:Geist Mono;color:#8E8E93">Online</div></div></div></div></div></div>
+
+<div class="tab" id="tab-finansial"><div class="wrap"><div class="label">Finansial • Online</div><div class="panel"><div style="display:flex;justify-content:space-between"><div><p style="font-family:Geist Mono;font-size:9px;color:#8E8E93">TABUNGAN</p><b id="saldo" style="font-size:20px">Rp 0</b></div><div style="text-align:right"><p style="font-family:Geist Mono;font-size:9px;color:#8E8E93">KELUAR</p><b id="keluar" style="font-size:13px;color:#EF4444">Rp 0</b></div></div><input class="input" id="fJml" type="number" placeholder="Jumlah" style="margin-top:12px"><select id="fTipe" class="input" style="margin-top:8px"><option value="in">Tabungan +</option><option value="out">Pengeluaran -</option></select><input class="input" id="fCat" placeholder="Catatan" style="margin-top:8px"><button class="btn-p" style="margin-top:10px" onclick="bal(this);addFin()">Simpan Online</button><div id="fList" style="margin-top:12px"></div></div></div></div>
+
+<div class="tab" id="tab-berita"><div class="wrap">
+<div class="label">Berita Resmi Indonesia • Nonton di APK Langsung</div>
+<div class="tv-tab">
+<button class="active" onclick="setTV(this,'2k8x8O5q2oY')">KOMPAS TV</button>
+<button onclick="setTV(this,'mD3D8F3z5wY')">TV ONE</button>
+<button onclick="setTV(this,'y60wDzZt8yg')">INEWS TV</button>
+<button onclick="setTV(this,'2JlVqfW9-3g')">METRO TV</button>
+</div>
+<div style="border-radius:20px;overflow:hidden;background:#000;box-shadow:0 16px 32px rgba(0,0,0,.32);border:.7px solid rgba(255,255,255,.12);position:relative">
+<iframe id="tvFrame" width="100%" height="196" src="https://www.youtube.com/embed/2k8x8O5q2oY?autoplay=0&mute=0" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<div style="position:absolute;top:8px;left:8px;background:#FF0000;color:#fff;font-family:Geist Mono;font-size:8px;padding:3px 7px;border-radius:999px;display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;background:#fff;border-radius:50%;display:inline-block;animation:pulse 1s infinite"></span>LIVE • RESMI • DALAM APK</div>
+</div>
+<div class="news-cat">
+<button class="active" onclick="setCat(this,'top')">TERKINI</button>
+<button onclick="setCat(this,'nasional')">NASIONAL</button>
+<button onclick="setCat(this,'teknologi')">TEKNOLOGI</button>
+<button onclick="setCat(this,'olahraga')">OLAHRAGA</button>
+</div>
+<div id="newsList"><div style="text-align:center;padding:20px;color:rgba(255,255,255,.5);font-family:Geist Mono;font-size:10px">Loading Berita Resmi Online...</div></div>
+</div></div>
+
+<div class="tab" id="tab-koreksi"><div class="wrap"><div class="label">Koreksi • Auto WA Online</div><div class="panel"><input class="input" id="kNama" placeholder="Nama"><textarea id="kPesan" class="input" style="height:100px;border-radius:18px;padding-top:12px;margin-top:8px;resize:none" placeholder="Komentar / Koreksi"></textarea><button class="btn-p" style="margin-top:10px" onclick="bal(this);sendWA()">Kirim WA 088994518831</button></div></div></div>
+
+<div class="nav">
+<div class="nav-item active" id="nav-home" onclick="bal(this);go('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Home</span></div>
+<div class="nav-item" id="nav-finansial" onclick="bal(this);go('finansial')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15"/><path d="M3 7v9a2 2 0 0 0 2 2h14a1 1 0 0 0 1-1v-3"/><circle cx="16" cy="12" r="1"/></svg><span>Finansial</span></div>
+<div class="nav-item" id="nav-down" onclick="bal(this);go('down')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="3" y2="15"/></svg><span>Download</span></div>
+<div class="nav-item" id="nav-berita" onclick="bal(this);go('berita')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M16 7l-4-3-4 3"/></svg><span>Berita</span></div>
+<div class="nav-item" id="nav-koreksi" onclick="bal(this);go('koreksi')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span>Koreksi</span></div>
+</div>
+
+<!-- PLAYER BERITA NONTON LANGSUNG DI DALAM APK - FIX -->
+<div id="inAppView" style="display:none;position:fixed;inset:0;background:#06020F;z-index:9999;flex-direction:column">
+  <div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(6,2,15,.95);border-bottom:.7px solid rgba(167,139,250,.2);flex-shrink:0">
+    <b style="font-size:12px">YOPZ • Nonton di APK</b>
+    <button onclick="closeNews()" style="width:32px;height:32px;border-radius:999px;border:none;background:#fff;color:#000;font-weight:700;cursor:pointer">✕</button>
+  </div>
+  <iframe id="inAppFrame" style="flex:1;width:100%;border:none;background:#fff" src=""></iframe>
+</div>
+
+</div>
+
+<script>
+function bal(el){el.classList.remove('bal');void el.offsetWidth;el.classList.add('bal');setTimeout(()=>el.classList.remove('bal'),580);if(navigator.vibrate) navigator.vibrate(10)}
+function go(t){document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active'));document.querySelectorAll('.nav-item').forEach(e=>e.classList.remove('active'));document.getElementById('tab-'+t).classList.add('active');let n=document.getElementById('nav-'+t);if(n)n.classList.add('active');if(t==='berita') loadNews(currentCat)}
+let cur='',V='',A='';
+function pick(p){cur=p;document.querySelectorAll('.card-mini.down-purple').forEach(c=>c.style.outline='');event.currentTarget.style.outline='2px solid #fff';event.currentTarget.style.outlineOffset='2px'}
+async function goDown(){let u=document.getElementById('dUrl').value.trim();let pv=document.getElementById('pv');let act=document.getElementById('dlAct');if(!cur||!u)return;pv.innerHTML='Loading Online API...';try{let r=await fetch('https://www.tikwm.com/api/?url='+encodeURIComponent(u)+'&hd=1');let j=await r.json();V=j.data.play||j.data.hdplay||'';A=j.data.music||'';pv.innerHTML=V?'<video src="'+V+'" controls style="width:100%;max-height:260px"></video>':'<img src="'+j.data.cover+'" style="width:100%">';act.style.display='grid'}catch{pv.innerHTML='Gagal online - coba link lain'}}
+async function saveFile(url,name){try{let r=await fetch(url);let b=await r.blob();let u=URL.createObjectURL(b);let a=document.createElement('a');a.href=u;a.download=name;a.click()}catch{window.open(url,'_blank')}}
+function dlVideo(){if(V) saveFile(V,'video-'+Date.now()+'.mp4')}function dlAudio(){if(A) saveFile(A,'audio-'+Date.now()+'.mp3')}
+
+let fins=JSON.parse(localStorage.getItem('y_fin')||'[]');
+function renderFin(){let s=0,k=0;fins.forEach(f=>{if(f.tipe==='in') s+=f.jml; else {s-=f.jml;k+=f.jml}});document.getElementById('saldo').innerText='Rp '+s.toLocaleString('id-ID');document.getElementById('keluar').innerText='Rp '+k.toLocaleString('id-ID');document.getElementById('fList').innerHTML=fins.map((f,i)=>`<div style="height:50px;background:#fff;border:.6px solid rgba(0,0,0,.06);border-radius:999px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;box-shadow:0 4px 10px rgba(0,0,0,.06)"><div><b style="font-size:11px;color:#0A0A0B">${f.cat||'Catatan'}</b><p style="font-size:9px;font-family:Geist Mono;color:#8E8E93">Rp ${f.jml.toLocaleString('id-ID')}</p></div><span style="cursor:pointer;color:#0A0A0B" onclick="fins.splice(${i},1);saveFin()">✕</span></div>`).join('')}
+function saveFin(){localStorage.setItem('y_fin',JSON.stringify(fins));fetch('https://jsonplaceholder.typicode.com/posts',{method:'POST',body:JSON.stringify(fins)});renderFin()}
+function addFin(){let j=parseInt(document.getElementById('fJml').value||0);let t=document.getElementById('fTipe').value;let c=document.getElementById('fCat').value;if(!j)return;fins.unshift({jml:j,tipe:t,cat:c});document.getElementById('fJml').value='';document.getElementById('fCat').value='';saveFin()}renderFin();
+
+let currentCat='top';
+function setTV(el,id){document.querySelectorAll('.tv-tab button').forEach(b=>b.classList.remove('active'));el.classList.add('active');document.getElementById('tvFrame').src='https://www.youtube.com/embed/'+id+'?autoplay=1&mute=0';bal(el)}
+function setCat(el,cat){document.querySelectorAll('.news-cat button').forEach(b=>b.classList.remove('active'));el.classList.add('active');currentCat=cat;loadNews(cat);bal(el)}
+
+async function loadNews(cat='top'){
+ let list=document.getElementById('newsList');
+ list.innerHTML='<div style="text-align:center;padding:20px;color:rgba(255,255,255,.5);font-family:Geist Mono;font-size:10px">Loading '+cat.toUpperCase()+' Online...</div>';
+ let rssMap={
+  top:'https://news.google.com/rss?hl=id-ID&gl=ID&ceid=ID:id',
+  nasional:'https://news.google.com/rss/search?q=Nasional+Indonesia&hl=id-ID&gl=ID&ceid=ID:id',
+  teknologi:'https://news.google.com/rss/search?q=Teknologi+Indonesia&hl=id-ID&gl=ID&ceid=ID:id',
+  olahraga:'https://news.google.com/rss/search?q=Olahraga+Indonesia&hl=id-ID&gl=ID&ceid=ID:id'
+ };
+ let url=rssMap[cat]||rssMap.top;
+ try{
+  let r=await fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(url));
+  let j=await r.json();
+  list.innerHTML=j.items.slice(0,10).map(it=>{
+   let source=it.source||'Google News • Resmi';
+   let date=new Date(it.pubDate).toLocaleDateString('id-ID',{day:'2-digit',month:'short'});
+   return `<div class="news-card" onclick="openNews('${it.link}')">
+    <div style="width:40px;height:40px;border-radius:12px;background:linear-gradient(180deg, #8B5CF6, #5B21B6);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg></div>
+    <div style="flex:1"><b style="font-size:12px;line-height:1.3;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${it.title}</b><p style="font-size:9px;color:#8E8E93;font-family:Geist Mono;margin-top:4px">${date} • ${source} • TAP NONTON DI APK</p></div>
+   </div>`;
+  }).join('');
+ }catch(e){
+  list.innerHTML='<p style="font-family:Geist Mono;font-size:10px;color:rgba(255,255,255,.6);text-align:center">Butuh internet untuk Berita Resmi Online</p>';
+ }
+}
+loadNews();
+
+function openNews(link){
+ document.getElementById('inAppFrame').src=link;
+ document.getElementById('inAppView').style.display='flex';
+ document.body.style.overflow='hidden';
+}
+function closeNews(){
+ document.getElementById('inAppView').style.display='none';
+ document.getElementById('inAppFrame').src='';
+ document.body.style.overflow='';
+}
+
+function sendWA(){let n=document.getElementById('kNama').value||'Anonim';let p=document.getElementById('kPesan').value;if(!p)return;fetch('https://jsonplaceholder.typicode.com/posts',{method:'POST',body:JSON.stringify({nama:n,pesan:p})}).then(()=>{window.open('https://wa.me/6288994518831?text='+encodeURIComponent('*KOREKSI YOPZ*%0ANama: '+n+'%0APesan: '+p),'_blank')})}
+</script>
+</body>
+</html>
